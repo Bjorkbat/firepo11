@@ -16,19 +16,31 @@
         </div>
       </section>
 
+      <section>
+
+        <h2>Add Some Questions</h2>
+        <p class="lead">Polls need questions, obviously.</p>
+
+        <new-question></new-question>
+
+      </section>
+
     </form>
 
   </div>
 </template>
 
 <script>
+import NewQuestion from 'components/subcomponents/NewQuestion.vue';
 export default {
+
+  components: { NewQuestion },
 
   data: function() {
     return {
       name: ''
     }
-  }
+  },
 
   methods: {
 
